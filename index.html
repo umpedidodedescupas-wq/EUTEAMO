@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#170d1a" />
+  <meta name="description" content="Uma carta de amor, arrependimento e recomeço." />
+  <title>Para você, meu amor ❤️‍🩹</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg: #100b13; --paper: #f9f1ed; --ink: #3b202c; --rose: #e98d9c; --muted: #cbb7bd; --gold: #f4c994; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--paper); background: var(--bg); font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
+    body::before { content: ''; position: fixed; inset: 0; pointer-events: none; opacity: .15; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.3'/%3E%3C/svg%3E"); z-index: 4; }
+    .orb { position: fixed; width: 420px; height: 420px; border-radius: 50%; filter: blur(100px); opacity: .16; background: #c7536d; top: -150px; right: -120px; pointer-events:none; }
+    .orb.two { top: 55%; left: -230px; background: #77547c; }
+    section { min-height: 100vh; padding: 100px 22px; display: grid; place-items: center; position: relative; }
+    .wrap { width: min(940px, 100%); margin: auto; position: relative; z-index: 1; }
+    .eyebrow { color: var(--rose); text-transform: uppercase; letter-spacing: .22em; font-size: .7rem; font-weight: 700; }
+    h1, h2, h3, .quote, .letter { font-family: 'Cormorant Garamond', serif; }
+    h1 { font-size: clamp(3.8rem, 12vw, 8rem); line-height: .82; margin: 22px 0; font-weight: 500; letter-spacing: -.06em; }
+    h2 { font-size: clamp(2.7rem, 7vw, 5rem); line-height: .95; margin: 16px 0 28px; font-weight: 500; }
+    p { color: var(--muted); line-height: 1.85; font-size: 1.03rem; }
+    .hero { text-align: center; overflow: hidden; }
+    .hero .intro { max-width: 550px; margin: 0 auto 35px; }
+    .heart { width: 100px; height: 100px; margin: 0 auto 24px; display: grid; place-items: center; font-size: 3.6rem; animation: breathe 3s ease-in-out infinite; filter: drop-shadow(0 0 24px #cf687d); }
+    @keyframes breathe { 50% { transform: scale(1.12); } }
+    .btn { border: 1px solid rgba(233,141,156,.65); border-radius: 99px; color: #fff; background: linear-gradient(120deg, #b54d69, #813b60); padding: 15px 24px; font: 600 .9rem 'DM Sans'; cursor: pointer; transition: .25s; box-shadow: 0 10px 35px #8e456533; }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 16px 40px #c86b824d; }
+    .scroll { position: absolute; bottom: 28px; color: #a88f99; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; }
+    .letter-wrap { background: var(--paper); color: var(--ink); padding: clamp(30px, 7vw, 74px); border-radius: 4px; box-shadow: 0 22px 80px #0008; transform: rotate(-.7deg); }
+    .letter-wrap::before { content: '❤️‍🩹'; display: block; font-size: 1.7rem; margin-bottom: 20px; }
+    .letter { font-size: clamp(1.2rem, 2.4vw, 1.55rem); line-height: 1.58; }
+    .letter p { color: var(--ink); font-family: inherit; font-size: inherit; line-height: inherit; }
+    .signature { text-align: right; font-size: 1.5rem; color: #9c4e62; margin-top: 35px; }
+    .apologies { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 35px; }
+    .apology { padding: 28px; border: 1px solid #ffffff14; background: #ffffff08; border-radius: 16px; opacity: 0; transform: translateY(20px); transition: .7s; }
+    .apology.show { opacity: 1; transform: none; }
+    .apology strong { display: block; color: var(--rose); font-family: 'Cormorant Garamond'; font-size: 1.8rem; margin-bottom: 10px; }
+    .apology p { margin: 0; font-size: .95rem; }
+    .center { text-align: center; }
+    .big-love { font-size: clamp(5rem, 20vw, 13rem); line-height: .7; color: var(--rose); text-shadow: 0 0 50px #d969814d; margin: 48px 0; letter-spacing: -.08em; }
+    .promise { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .promise-card { border-left: 2px solid var(--rose); padding: 20px 25px; background: #ffffff06; }
+    .promise-card h3 { margin: 0 0 8px; font-size: 1.65rem; font-weight: 500; }
+    .promise-card p { margin: 0; font-size: .92rem; }
+    .final { background: radial-gradient(circle at center, #3b1727 0%, var(--bg) 64%); text-align: center; }
+    .final p { max-width: 600px; margin: 0 auto 28px; }
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 1s, transform 1s; }
+    .reveal.visible { opacity: 1; transform: none; }
+    #answer { display: none; margin: 30px auto 0; color: var(--gold); font: 2rem 'Cormorant Garamond'; animation: rise .6s ease both; }
+    @keyframes rise { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:none; } }
+    @media (max-width: 650px) { section { padding: 80px 18px; } .apologies, .promise { grid-template-columns: 1fr; } .letter-wrap { transform: none; } }
+  </style>
+</head>
+<body>
+  <div class="orb"></div><div class="orb two"></div>
+  <main>
+    <section class="hero">
+      <div class="wrap reveal">
+        <div class="heart">❤️‍🩹</div>
+        <span class="eyebrow">Para você, com todo o meu coração</span>
+        <h1>Antes de<br><em>tudo...</em></h1>
+        <p class="intro">Eu fiz este cantinho porque existem coisas que eu precisava te dizer com calma, sinceridade e olhando para o fundo do seu coração.</p>
+        <button class="btn" data-scroll="carta">Leia com calma ❤️‍🩹</button>
+      </div>
+      <span class="scroll">deslize para continuar ↓</span>
+    </section>
+
+    <section id="carta"><div class="wrap reveal"><div class="letter-wrap letter">
+      <span class="eyebrow">Uma carta para o meu amor</span>
+      <h2>Eu preciso te pedir perdão.</h2>
+      <p>Meu amor,</p>
+      <p>Eu não fiz este site para tentar apagar os meus erros com algumas palavras bonitas. Fiz porque preciso reconhecer o que fiz e te pedir perdão de verdade.</p>
+      <p>Perdão pelas vezes em que minhas atitudes te machucaram. Pelas vezes em que fiz você chorar, ficar mal, perder a paz e passar momentos difíceis por minha causa. Eu sei que algumas coisas não são simplesmente esquecidas com um “desculpa”.</p>
+      <p>Sinto muito por todas as vezes em que você terminou uma conversa com o coração pesado. Sinto muito pelas vezes em que ficou com a cabeça doendo, com os olhos inchados e ardendo, quando eu deveria ser alguém que trouxesse paz para você.</p>
+      <p>Eu não quero ser o motivo do seu sofrimento. Quero ser alguém com quem você se sinta segura para ser você mesma. Se eu te fiz sentir o contrário, me perdoa.</p>
+      <p>Eu te amo muito. E sei que amar você não é apenas dizer “eu te amo”: é ouvir, ter paciência, reconhecer quando estou errado, controlar minhas atitudes e pensar antes de machucar a pessoa que mais amo.</p>
+      <p>Não posso voltar no tempo, mas posso mudar o que vou fazer daqui para frente. É isso que eu quero fazer. Por você, por mim, por nós.</p>
+      <div class="signature">Eu te amo, minha princesa. ❤️‍🩹</div>
+    </div></div></section>
+
+    <section><div class="wrap reveal"><span class="eyebrow">Eu sinto muito</span><h2>Todas as vezes que você chorou.</h2><p>Desculpa por cada momento em que eu poderia ter escolhido carinho e escolhi uma atitude que te machucou.</p>
+      <div class="apologies">
+        <article class="apology"><strong>Desculpa...</strong><p>por cada lágrima que saiu por minha causa.</p></article>
+        <article class="apology"><strong>Desculpa...</strong><p>por cada noite em que você ficou mal pensando no que aconteceu.</p></article>
+        <article class="apology"><strong>Desculpa...</strong><p>por cada vez que você sentiu que eu não estava te entendendo.</p></article>
+        <article class="apology"><strong>Desculpa...</strong><p>por nem sempre cuidar das minhas palavras como eu deveria.</p></article>
+      </div>
+      <p style="margin-top:38px;color:#f0c4ca">Eu não quero que essas lágrimas sejam apenas lembranças. Quero que sejam um motivo para eu aprender a cuidar melhor de você.</p>
+    </div></section>
+
+    <section><div class="wrap center reveal"><span class="eyebrow">Nunca duvide disso</span><div class="big-love">EU<br>TE AMO.</div><p>Mesmo quando eu erro. Mesmo quando a gente briga. Mesmo quando as coisas ficam difíceis.</p><p style="color:var(--paper)">Meu amor por você não é desculpa para os meus erros.<br>É motivo para eu querer ser melhor.</p></div></section>
+
+    <section><div class="wrap reveal"><span class="eyebrow">O que eu posso fazer</span><h2>Eu não vou prometer ser perfeito.</h2><p>Porque sou humano e ainda tenho muito a aprender. Mas posso te prometer que minhas atitudes vão começar a acompanhar o meu arrependimento.</p>
+      <div class="promise">
+        <div class="promise-card"><h3>Ouvir mais</h3><p>Vou tentar entender o que você sente, mesmo quando for difícil para mim.</p></div>
+        <div class="promise-card"><h3>Pensar antes</h3><p>Vou cuidar melhor das minhas palavras e das minhas atitudes.</p></div>
+        <div class="promise-card"><h3>Reconhecer</h3><p>Vou admitir meus erros mais rápido, sem transformar tudo em uma discussão.</p></div>
+        <div class="promise-card"><h3>Fazer diferente</h3><p>Não quero que um pedido de desculpas seja só uma frase. Quero que seja uma mudança.</p></div>
+      </div>
+    </div></section>
+
+    <section class="final"><div class="wrap reveal"><span class="eyebrow">Se você chegou até aqui...</span><h2>Me perdoa?</h2><p>Eu não sei como será o nosso futuro, mas sei que, se você continuar caminhando comigo, quero fazer diferente. Quero que um dia você olhe para trás e perceba que eu aprendi, cresci e comecei a cuidar melhor do coração da mulher que amo.</p><p>Obrigado por ainda estar aqui. E, principalmente...</p><button class="btn" id="forgive">Ainda não acabou... ❤️</button><div id="answer">Então vem cá... deixa eu te dar um abraço. 🥺❤️</div></div></section>
+  </main>
+  <script>
+    document.querySelectorAll('[data-scroll]').forEach(button => button.addEventListener('click', () => document.getElementById(button.dataset.scroll).scrollIntoView({ behavior: 'smooth' })));
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); entry.target.querySelectorAll?.('.apology').forEach((card, i) => setTimeout(() => card.classList.add('show'), i * 180)); } }), { threshold: .16 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    document.getElementById('forgive').addEventListener('click', e => { e.currentTarget.style.display = 'none'; document.getElementById('answer').style.display = 'block'; });
+  </script>
+</body>
+</html>
