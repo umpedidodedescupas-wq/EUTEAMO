@@ -3,51 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#170d1a" />
+  <meta name="theme-color" content="#050505" />
   <meta name="description" content="Para Cassiane, com amor, arrependimento e promessa de mudança." />
   <title>Para a Cassiane, meu amor ❤️‍🩹</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    :root { --bg:#120b13; --paper:#f9f1ed; --ink:#3f2330; --rose:#e98d9c; --muted:#d6b7c0; --gold:#f4c994; }
+    :root { --bg:#050505; --panel:#100b0c; --paper:#fff5f5; --ink:#300d13; --red:#ed1b35; --red-dark:#8e0719; --muted:#d5b9bd; --gold:#f5c5a7; }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
-    body { margin:0; color:var(--paper); background:var(--bg); font-family:'DM Sans',sans-serif; overflow-x:hidden; }
-    body::before { content:""; position:fixed; inset:0; pointer-events:none; opacity:.13; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E"); z-index:4; }
-    .orb { position:fixed; width:430px; height:430px; border-radius:50%; filter:blur(104px); opacity:.15; background:#c75771; top:-160px; right:-120px; z-index:0; pointer-events:none; }
-    .orb.two { top:55%; left:-210px; background:#7a556c; }
+    body { margin:0; color:#fff; background:var(--bg); font-family:'DM Sans',sans-serif; overflow-x:hidden; }
+    body::before { content:""; position:fixed; inset:0; pointer-events:none; opacity:.12; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E"); z-index:4; }
+    .orb { position:fixed; width:430px; height:430px; border-radius:50%; filter:blur(110px); opacity:.2; background:#b30022; top:-160px; right:-120px; pointer-events:none; }
+    .orb.two { top:55%; left:-220px; background:#55000d; }
     section { min-height:100vh; padding:100px 22px; display:grid; place-items:center; position:relative; }
     .wrap { width:min(960px,100%); margin:auto; position:relative; z-index:1; }
-    .eyebrow { color:var(--rose); text-transform:uppercase; letter-spacing:.2em; font-size:.72rem; font-weight:700; }
+    .eyebrow { color:#ff5264; text-transform:uppercase; letter-spacing:.2em; font-size:.72rem; font-weight:700; }
     h1,h2,h3,.signature { font-family:'Cormorant Garamond',serif; }
     h1 { font-size:clamp(3.8rem,10vw,8rem); line-height:.82; margin:20px 0; letter-spacing:-.06em; font-weight:500; }
     h2 { font-size:clamp(2.9rem,7vw,5rem); line-height:.9; margin:16px 0 28px; font-weight:500; }
     p { color:var(--muted); line-height:1.9; font-size:1.02rem; }
-    .hero { text-align:center; }
+    .hero { text-align:center; background:radial-gradient(circle at center, #25050a 0%, var(--bg) 58%); }
     .hero .intro { max-width:560px; margin:0 auto 32px; }
-    .heart { width:110px; height:110px; margin:0 auto 24px; display:grid; place-items:center; font-size:3.8rem; animation:breathe 3s ease-in-out infinite; filter:drop-shadow(0 0 24px rgba(207,91,112,.9)); }
+    .heart { width:110px; height:110px; margin:0 auto 24px; display:grid; place-items:center; font-size:3.8rem; animation:breathe 3s ease-in-out infinite; filter:drop-shadow(0 0 26px rgba(237,27,53,.9)); }
     @keyframes breathe { 50% { transform:scale(1.12); } }
-    .btn { border:1px solid rgba(233,141,156,.8); border-radius:999px; background:linear-gradient(120deg,#b95067,#7e365f); color:#fff; padding:15px 28px; font:600 .9rem 'DM Sans',sans-serif; cursor:pointer; transition:.25s ease; box-shadow:0 10px 30px rgba(142,70,96,.4); }
-    .btn:hover { transform:translateY(-2px); box-shadow:0 14px 36px rgba(206,100,131,.45); }
-    .scroll { position:absolute; bottom:28px; color:#a98a96; font-size:.7rem; text-transform:uppercase; letter-spacing:.14em; }
-    .letter-wrap { background:var(--paper); color:var(--ink); padding:clamp(28px,6vw,76px); border-radius:6px; box-shadow:0 24px 80px rgba(0,0,0,.35); transform:rotate(-.6deg); }
+    .btn { border:1px solid rgba(255,75,94,.85); border-radius:999px; background:linear-gradient(120deg,var(--red),var(--red-dark)); color:#fff; padding:15px 28px; font:600 .9rem 'DM Sans',sans-serif; cursor:pointer; transition:.25s ease; box-shadow:0 10px 30px rgba(170,0,28,.42); }
+    .btn:hover { transform:translateY(-2px); box-shadow:0 14px 38px rgba(237,27,53,.5); }
+    .scroll { position:absolute; bottom:28px; color:#a88a8f; font-size:.7rem; text-transform:uppercase; letter-spacing:.14em; }
+    .letter-wrap { background:var(--paper); color:var(--ink); padding:clamp(28px,6vw,76px); border-radius:6px; box-shadow:0 24px 80px #000; transform:rotate(-.6deg); }
     .letter-wrap::before { content:'❤️‍🩹'; display:block; font-size:1.8rem; margin-bottom:18px; }
     .letter { font-size:clamp(1.2rem,2.5vw,1.6rem); line-height:1.62; }
     .letter p { margin:0 0 1.2em; font-family:inherit; font-size:inherit; line-height:inherit; color:var(--ink); }
-    .signature { text-align:right; font-size:1.7rem; color:#8d3f5d; margin-top:28px; font-weight:600; }
+    .signature { text-align:right; font-size:1.7rem; color:#a20c21; margin-top:28px; font-weight:600; }
     .apologies { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin-top:34px; }
-    .apology { padding:26px 22px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.04); border-radius:18px; opacity:0; transform:translateY(22px); transition:.7s ease; }
+    .apology { padding:26px 22px; border:1px solid rgba(237,27,53,.25); background:linear-gradient(145deg,rgba(120,0,18,.22),rgba(255,255,255,.025)); border-radius:18px; opacity:0; transform:translateY(22px); transition:.7s ease; }
     .apology.show { opacity:1; transform:translateY(0); }
-    .apology strong { display:block; color:var(--rose); font-family:'Cormorant Garamond',serif; font-size:1.9rem; margin-bottom:8px; }
+    .apology strong { display:block; color:#ff5264; font-family:'Cormorant Garamond',serif; font-size:1.9rem; margin-bottom:8px; }
     .apology p { margin:0; font-size:.97rem; }
     .center { text-align:center; }
-    .big-love { font-size:clamp(5rem,18vw,13rem); line-height:.7; color:var(--rose); text-shadow:0 0 50px rgba(222,108,134,.45); letter-spacing:-.08em; margin:42px 0; }
+    .big-love { font-size:clamp(5rem,18vw,13rem); line-height:.7; color:var(--red); text-shadow:0 0 50px rgba(237,27,53,.55); letter-spacing:-.08em; margin:42px 0; }
     .promise { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-top:24px; }
-    .promise-card { border-left:2px solid var(--rose); padding:20px 24px; background:rgba(255,255,255,.04); border-radius:0 10px 10px 0; }
+    .promise-card { border-left:2px solid var(--red); padding:20px 24px; background:rgba(120,0,18,.16); border-radius:0 10px 10px 0; }
     .promise-card h3 { margin:0 0 8px; font-size:1.8rem; font-weight:500; }
     .promise-card p { margin:0; font-size:.94rem; }
-    .final { background:radial-gradient(circle at center,rgba(70,29,42,.9) 0%,var(--bg) 62%); text-align:center; }
+    .final { background:radial-gradient(circle at center, #390812 0%, var(--bg) 62%); text-align:center; }
     .final p { max-width:660px; margin:0 auto 24px; }
     .reveal { opacity:0; transform:translateY(30px); transition:opacity 1s ease,transform 1s ease; }
     .reveal.visible { opacity:1; transform:translateY(0); }
@@ -60,42 +60,25 @@
   <div class="orb"></div><div class="orb two"></div>
   <main>
     <section class="hero"><div class="wrap reveal"><div class="heart">❤️‍🩹🥺</div><span class="eyebrow">Para você, com todo o meu coração 💌</span><h1>Antes de<br>tudo...</h1><p class="intro">Cassiane, eu fiz este cantinho porque existem coisas que eu precisava te dizer com calma, sinceridade e olhando nos meus próprios erros. 🥺❤️</p><button class="btn" data-scroll="carta">Leia com calma ❤️‍🩹</button></div><span class="scroll">deslize para continuar ↓</span></section>
-
     <section id="carta"><div class="wrap reveal"><div class="letter-wrap letter"><span class="eyebrow">Uma carta para o meu amor 💌</span><h2>Eu preciso te pedir perdão. 🙏🥺</h2>
-      <p>Meu amor Cassiane, 💖</p>
-      <p>Eu não fiz este site para tentar apagar os meus erros com algumas palavras bonitas. Fiz porque preciso reconhecer o que fiz e te pedir perdão de verdade. 🙏</p>
+      <p>Meu amor Cassiane, 💖</p><p>Eu não fiz este site para tentar apagar os meus erros com algumas palavras bonitas. Fiz porque preciso reconhecer o que fiz e te pedir perdão de verdade. 🙏</p>
       <p>Perdão pelas vezes em que minhas atitudes te machucaram. Pelas vezes em que eu fiz você chorar, ficar mal, perder a paz e passar momentos difíceis por minha causa. Eu sei que algumas coisas não são simplesmente esquecidas com um “desculpa”. 😔💔</p>
       <p>Sinto muito por todas as vezes em que você terminou uma conversa comigo com o coração pesado. Sinto muito pelas vezes em que você ficou com a cabeça doendo, com os olhos inchados e ardendo, e eu deveria ter sido justamente alguém que trouxesse paz para você. 😢💔</p>
       <p>E eu preciso te falar uma coisa que dói muito em mim também: toda vez que você fala sobre o quanto eu te machuquei, é como se eu levasse uma facada no coração. 💔🔪 Não porque eu queira fazer você parar de falar ou porque eu esteja tentando me colocar como vítima, mas porque eu lembro que fui eu quem causou essa dor em você. Eu fico mal sabendo que a pessoa que eu amo passou por tudo isso por minha causa. 😞❤️‍🩹</p>
       <p>Eu não quero ser o motivo do seu sofrimento. Eu quero ser alguém que te faça se sentir segura para ser você mesma, para sorrir de novo e para descansar no meu abraço. Se eu te fiz sentir o contrário em algum momento, me perdoa. 🥺🤍</p>
       <p>Eu te amo muito. E sei que amar você não é apenas dizer “eu te amo”: é ouvir, ter paciência, reconhecer quando estou errado, controlar minhas atitudes e pensar antes de machucar a pessoa que eu mais amo. ❤️</p>
       <p>Não posso voltar no tempo e mudar aquilo que já aconteceu. Mas posso mudar o que vou fazer daqui para frente. E é isso que eu quero fazer. Por você, por mim, por nós. 🤝❤️‍🩹</p>
-      <div class="signature">Eu te amo, Cassiane. ❤️‍🩹🥺</div>
-    </div></div></section>
-
-    <section><div class="wrap reveal"><span class="eyebrow">Eu sinto muito 😔</span><h2>Todas as vezes que você chorou. 😢</h2><p>Desculpa por cada momento em que eu poderia ter escolhido carinho e escolhi uma atitude que te machucou. 💔</p><div class="apologies">
-      <article class="apology"><strong>Desculpa... 🥺</strong><p>por cada lágrima que saiu por minha causa. 😢</p></article>
-      <article class="apology"><strong>Desculpa... 💔</strong><p>por cada noite em que você ficou mal pensando no que aconteceu. 🌙</p></article>
-      <article class="apology"><strong>Desculpa... 🙏</strong><p>por cada vez que você sentiu que eu não estava te entendendo.</p></article>
-      <article class="apology"><strong>Desculpa... ❤️‍🩹</strong><p>por não ter cuidado melhor das minhas palavras e das minhas atitudes.</p></article>
-    </div><p style="margin-top:36px;color:#f0c9d4;">Eu não quero que essas lágrimas sejam apenas lembranças. Quero que elas sejam um motivo para eu aprender a cuidar melhor de você. 🥺🌹</p></div></section>
-
-    <section><div class="wrap center reveal"><span class="eyebrow">Nunca duvide disso 💖</span><div class="big-love">EU<br>TE AMO.</div><p>Mesmo quando eu erro. Mesmo quando a gente briga. Mesmo quando as coisas ficam difíceis. 🥺</p><p style="color:var(--paper);">Meu amor por você não é desculpa para os meus erros.<br>É motivo para eu querer ser melhor. ❤️‍🩹</p></div></section>
-
-    <section><div class="wrap reveal"><span class="eyebrow">O que eu posso fazer 🤝</span><h2>Eu não vou prometer ser perfeito.</h2><p>Porque sou humano e ainda tenho muito a aprender. Mas posso te prometer que minhas atitudes vão começar a acompanhar o meu arrependimento. 🙏</p><div class="promise">
-      <div class="promise-card"><h3>Ouvir mais 👂</h3><p>Vou tentar entender o que você sente, mesmo quando for difícil para mim.</p></div>
-      <div class="promise-card"><h3>Pensar antes 🧠</h3><p>Vou cuidar melhor das minhas palavras e das minhas ações.</p></div>
-      <div class="promise-card"><h3>Reconhecer 🤍</h3><p>Vou admitir meus erros mais rápido sem transformar tudo em uma discussão.</p></div>
-      <div class="promise-card"><h3>Fazer diferente 🌱</h3><p>Não quero que um pedido de desculpas seja só uma frase. Quero que seja uma mudança.</p></div>
-    </div></div></section>
-
+      <div class="signature">Eu te amo, Cassiane. ❤️‍🩹🥺</div></div></div></section>
+    <section><div class="wrap reveal"><span class="eyebrow">Eu sinto muito 😔</span><h2>Todas as vezes que você chorou. 😢</h2><p>Desculpa por cada momento em que eu poderia ter escolhido carinho e escolhi uma atitude que te machucou. 💔</p><div class="apologies"><article class="apology"><strong>Desculpa... 🥺</strong><p>por cada lágrima que saiu por minha causa. 😢</p></article><article class="apology"><strong>Desculpa... 💔</strong><p>por cada noite em que você ficou mal pensando no que aconteceu. 🌙</p></article><article class="apology"><strong>Desculpa... 🙏</strong><p>por cada vez que você sentiu que eu não estava te entendendo.</p></article><article class="apology"><strong>Desculpa... ❤️‍🩹</strong><p>por não ter cuidado melhor das minhas palavras e das minhas atitudes.</p></article></div><p style="margin-top:36px;color:#f0b8c0;">Eu não quero que essas lágrimas sejam apenas lembranças. Quero que sejam um motivo para eu aprender a cuidar melhor de você. 🥺🌹</p></div></section>
+    <section><div class="wrap center reveal"><span class="eyebrow">Nunca duvide disso 💖</span><div class="big-love">EU<br>TE AMO.</div><p>Mesmo quando eu erro. Mesmo quando a gente briga. Mesmo quando as coisas ficam difíceis. 🥺</p><p style="color:#fff;">Meu amor por você não é desculpa para os meus erros.<br>É motivo para eu querer ser melhor. ❤️‍🩹</p></div></section>
+    <section><div class="wrap reveal"><span class="eyebrow">O que eu posso fazer 🤝</span><h2>Eu não vou prometer ser perfeito.</h2><p>Porque sou humano e ainda tenho muito a aprender. Mas posso te prometer que minhas atitudes vão começar a acompanhar o meu arrependimento. 🙏</p><div class="promise"><div class="promise-card"><h3>Ouvir mais 👂</h3><p>Vou tentar entender o que você sente, mesmo quando for difícil para mim.</p></div><div class="promise-card"><h3>Pensar antes 🧠</h3><p>Vou cuidar melhor das minhas palavras e das minhas ações.</p></div><div class="promise-card"><h3>Reconhecer 🤍</h3><p>Vou admitir meus erros mais rápido sem transformar tudo em uma discussão.</p></div><div class="promise-card"><h3>Fazer diferente 🌱</h3><p>Não quero que um pedido de desculpas seja só uma frase. Quero que seja uma mudança.</p></div></div></div></section>
     <section class="final"><div class="wrap reveal"><span class="eyebrow">Se você chegou até aqui... 🥺</span><h2>Me perdoa? 🙏</h2><p>Eu não sei como será o nosso futuro, mas sei que, se você continuar caminhando comigo, quero fazer diferente. Quero que um dia você olhe para trás e perceba que eu aprendi, cresci e comecei a cuidar melhor do coração da mulher que amo. ❤️</p><p>Obrigado por ainda estar aqui. E, principalmente... eu te amo muito, Cassiane. 💖</p><button class="btn" id="forgive">Ainda não acabou... ❤️</button><div id="answer">Então vem cá... deixa eu te dar um abraço. 🥺🤗❤️</div></div></section>
   </main>
   <script>
-    document.querySelectorAll('[data-scroll]').forEach(button => button.addEventListener('click', () => { const target = document.getElementById(button.dataset.scroll); if (target) target.scrollIntoView({ behavior:'smooth' }); }));
-    const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); if (entry.target.querySelectorAll) entry.target.querySelectorAll('.apology').forEach((card,i) => setTimeout(() => card.classList.add('show'), i * 180)); } }), { threshold:.14 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-    document.getElementById('forgive').addEventListener('click', e => { e.currentTarget.style.display='none'; document.getElementById('answer').style.display='block'; });
+    document.querySelectorAll('[data-scroll]').forEach(button => button.addEventListener('click', () => { const target=document.getElementById(button.dataset.scroll); if(target) target.scrollIntoView({behavior:'smooth'}); }));
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{ if(entry.isIntersecting){ entry.target.classList.add('visible'); if(entry.target.querySelectorAll) entry.target.querySelectorAll('.apology').forEach((card,i)=>setTimeout(()=>card.classList.add('show'),i*180)); } }),{threshold:.14});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+    document.getElementById('forgive').addEventListener('click',e=>{e.currentTarget.style.display='none';document.getElementById('answer').style.display='block';});
   </script>
 </body>
 </html>
